@@ -3,6 +3,7 @@
 @import "utils/vars"
 @import "utils/mixins"
 @import "utils/fonts"
+@import "modules/forms/forms"
 
 html
 	font-family: $font 
@@ -22,8 +23,7 @@ html
   width: 100%
   padding-right: 15px
   padding-left: 15px
-  margin-right: auto
-  margin-left: auto
+  margin: 0 auto
 
 @media (min-width: 576px) 
   .container 
@@ -39,14 +39,7 @@ html
   
 @media (min-width: 1200px) 
   .container 
-    max-width: 1140px // посмотреть как это будет в переменных
-  
-.container-fluid 
-  width: 100%
-  padding-right: 15px
-  padding-left: 15px
-  margin-right: auto
-  margin-left: auto
+    max-width: 1140px
 
 .large-12 
 	width: 100%
@@ -73,4 +66,3 @@ html
 .large-1    
 	width: 8.33333333%
 
-@import "modules/forms/forms"

@@ -11,16 +11,25 @@ $(document).ready(function(){
 
 			$('.form').each(function() { // .each(метод или функция) - перебор элементов объекта jQuery.
 				var form 	= $(this),
-						btn 	= form.find('.input-submit')
+						btn 	= form.find('.input-submit'),
 						error = {
-							fName: '',
-							lName: '',
-							mName: '',
-							phone: '',
-							email: ''	
+							fName: 'укажите имя',
+							lName: 'укажите фамилию',
+							mName: 'укажите отчество',
+							phone: 'укажите телефон',
+							email: 'укажите адрес эл. почты'	
 						};
 
-				form.find('.')
+				console.log( $('.name').attr('name') );
+
+				form.find('.input-field').each(function() {
+					if( $("[name='phone']").length ) {
+						if( ($(this).val().indexOf('_') != -1) || $(this).val() == '' ) {
+							$(this).addClass('empty');
+						}
+					}
+
+				});
 
 				btn.click(function() {
 					if( $(this).hasClass('disabled') ) {
