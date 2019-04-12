@@ -20,8 +20,6 @@ $(document).ready(function(){
 							email: 'укажите адрес эл. почты'	
 						};
 
-				console.log( $('.name').attr('name') );
-
 				form.find('.input-field').each(function() {
 					if( $("[name='phone']").length ) {
 						if( ($(this).val().indexOf('_') != -1) || $(this).val() == '' ) {
