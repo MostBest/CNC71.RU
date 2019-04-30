@@ -7,7 +7,11 @@ html(lang="ru-Ru")
 	body
 		header
 			.container
-				h1 Шаблон HTML5
+				.row-x
+					.cell
+						h1 Шаблон HTML5
+					.cell
+						h1 Шаблон HTML5
 				nav
 		main
 			//- include ../modules/header
@@ -17,5 +21,6 @@ html(lang="ru-Ru")
 			//- include ../modules/footer
 		footer
 		script(src="assets/js/libs.min.js")
+		script(src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js")
 		script(src="assets/js/main.js")
 		block script

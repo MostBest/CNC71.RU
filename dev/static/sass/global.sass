@@ -1,0 +1,41 @@
+@import "vendor/normalize"
+@import "fonts/fonts"
+@import "grid/grid"
+
+html
+	font-family: $font 
+	font-size: $font-size
+
+*:focus 
+	outline-style: none
+	outline-width: 0px !important
+	outline-color: none !important
+
+*,
+*::before,
+*::after
+	box-sizing: border-box
+
+.button
+	display: inline-block // ?
+	font-family: inherit
+	border: none
+	padding: .9rem 2.8rem
+	cursor: pointer
+	transition: .3s
+	font-size: 1.2rem
+	max-width: 150px
+	text-transform: uppercase
+
+.slider-next
+	background-color: #44aa55
+	color: #fff
+	&:hover
+		background-color: #339944
+
+.slider-prev
+	background: none
+	border: 1px solid #bdbfc1
+	color: #999
+
+@import "forms/forms"

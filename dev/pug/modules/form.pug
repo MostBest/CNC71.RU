@@ -1,36 +1,24 @@
 form(id="form" class="form")
 	section.form-container
 		header.form-container-title 
-			span Учетная запись
-		.form-row-x
-			.form-cell.large-4
+			span Контактные данные
+		.form-row-x.space-between
+			.form-cell
 				.input-group
 					input(id="fName" class="input-field name" name="fName" type="text" autocomplete="off")
 					label(for="fName" class="input-title") Имя
 
-			.form-cell.large-4
-				.input-group
-					input(id="mName" class="input-field" name="mName" type="text" autocomplete="off")
-					label(for="mName" class="input-title") Отчество
-					
-			.form-cell.large-4
+			.form-cell
 				.input-group
 					input(id="lName" class="input-field" name="lName" type="text" autocomplete="off")
-					label(for="lName" class="input-title") Фамилия
-
+					label(for="lName" class="input-title")
+						| Фамилия
+						span.warning ?
 
 		.form-row-x
-			.form-cell
-				.input-group
-					input(id="phone" class="input-field" name="phone" type="text" autocomplete="off")
-					label(for="phone" class="input-title") Телефон
-
-			.form-cell
-				.input-group
-					input(id="phone" class="input-field" name="phone" type="text" autocomplete="off")
-					label(for="phone" class="input-title") Телефон
-
-
+			.form-cell.space-between
+				button.button.slider-prev Назад				
+				button.button.slider-next Далее				
 
 form(id="form" class="form")
 	section.form-container
@@ -41,6 +29,7 @@ form(id="form" class="form")
 				.input-group
 					input(id="login" class="input-field" name="login" type="text" autocomplete="off")
 					label(for="login" class="input-title") Логин
+
 		.form-row-x
 			.form-cell
 				.input-group
@@ -53,6 +42,8 @@ form(id="form" class="form")
 		.form-row-x
 			span.form-message Указан не корректный логин или пароль
 
-		.form-row-x-between
-			input(id="submit-modal-1" class="input-submit disabled" type="submit" value="Войти")
-			a(href="" class="remove-password") Забыли пароль?
+		.form-row-x.space-between
+			.form-cell
+				input(id="submit-modal-1" class="input-submit disabled" type="submit" value="Войти")
+			.form-cell
+				a(href="" class="remove-password content-end") Забыли пароль?

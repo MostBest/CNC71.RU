@@ -1,0 +1,30 @@
+.container
+	padding-left: 15px // Или лучше в rem
+	padding-right: 15px
+	max-width: 1200px // подумать над переменной
+	margin: 0 auto
+	border: 1px solid #ccc // del
+
+.row-x
+	display: flex
+	flex-flow: row wrap
+	flex-basis: auto
+
+.cell
+	min-height: 0px
+	min-width: 0px
+	width: 100%
+	flex: 1 1 0px // flex-grow flex-shrink flex-basis
+
+.space-between
+	display: flex
+	justify-content: space-between
+
+.space-around
+	display: flex
+	justify-content: space-around
+
+.content-end
+	display: flex
+	justify-content: flex-end
+
